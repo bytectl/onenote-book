@@ -1,0 +1,68 @@
+{
+    "title": "onenot",
+    "author": "wuxingzhong",
+    "language" : "zh-hans",
+    "links": {
+        "sidebar": {
+            "Home": "https://onenote.bytectl.com/"
+        }
+    },
+
+    "styles": {
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "pdf": "styles/pdf.css",
+        "mobi": "styles/mobi.css",
+        "epub": "styles/epub.css"
+    },
+
+    "plugins": [
+        "-lunr",
+        "-search",
+        "search-plus",
+        "-sharing",
+        "-etoc",
+        "-theme-pdftoc",
+        "splitter",
+        "prism",
+        "prism-themes",
+        "-highlight",
+        "expandable-chapters-small",
+        "copy-code-button",
+        "-theme-api",
+        "anchor-navigation-ex",
+        "mermaid-cli",
+        "embed-pdf"
+    ],
+    "pluginsConfig": {
+        "mermaid-cli": {
+            "chromeDir": "/usr/bin/chromium",
+            "chromeArgs": ["--no-sandbox", "--disable-setuid-sandbox"]
+          },
+        
+        "prism": {
+            "css": [
+                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+            ]
+        },
+        "etoc": {
+            "h2lb": 3,
+            "mindepth": 3,
+            "maxdepth": 4,
+            "notoc": false
+        },
+        "theme-default": {
+            "showLevel": true
+        },
+        "anchor-navigation-ex": {
+           "associatedWithSummary":false,
+           "showLevel": true,
+           "multipleH1": true
+        },
+
+        "anchor-navigation-ex-pdf": {
+
+            "mode":""
+        }
+    }
+}

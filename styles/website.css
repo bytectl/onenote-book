@@ -1,0 +1,16 @@
+.markdown-section table {
+    display: table;
+    width: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow: auto;
+}
+
+html {
+    overflow: hidden; /*关闭全局滚动条*/
+}
+
+/*去除本书使用gitbook发布*/
+.gitbook-link {
+	display: none !important;
+}
