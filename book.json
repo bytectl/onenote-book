@@ -32,7 +32,8 @@
         "-theme-api",
         "anchor-navigation-ex",
         "mermaid-cli",
-        "embed-pdf"
+        "embed-pdf",
+        "sitemap-general"
     ],
     "pluginsConfig": {
         "mermaid-cli": {
@@ -59,10 +60,12 @@
            "showLevel": true,
            "multipleH1": true
         },
-
         "anchor-navigation-ex-pdf": {
 
             "mode":""
-        }
+        },
+        "sitemap-general": {
+            "prefix": "https://onenote.bytectl.com/onenote/"
+        }        
     }
 }
