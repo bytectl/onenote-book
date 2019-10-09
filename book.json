@@ -31,15 +31,11 @@
         "copy-code-button",
         "-theme-api",
         "anchor-navigation-ex",
-        "mermaid-cli",
+        "mermaid-gb3",
         "embed-pdf",
         "sitemap-general"
     ],
     "pluginsConfig": {
-        "mermaid-cli": {
-            "chromeDir": "/usr/bin/chromium",
-            "chromeArgs": ["--no-sandbox", "--disable-setuid-sandbox"]
-          },
         
         "prism": {
             "css": [
