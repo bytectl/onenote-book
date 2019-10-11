@@ -1,0 +1,19 @@
+kind: pipeline
+type: docker
+name: gitbook
+
+steps:
+- name: build
+  image: dotopt/gitbook-cli:3.2.3
+  commands:
+    - gitbook install
+    - gitbook build
+- name: publish
+  image: plugins/gh-pages
+  settings:
+    username: 
+      from_secret: github_username
+    password:
+      from_secret: github_password
+    pages_directory: _book/
+    target_branch: gh-pages
